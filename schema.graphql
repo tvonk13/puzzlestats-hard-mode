@@ -1,0 +1,28 @@
+type Stat @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  notes: String
+  weekday: Int
+  eligible: Boolean
+  epoch: Int
+  first_checked: Int
+  first_cleared: Int
+  first_opened: Int
+  first_solved: Int
+  puzzle_id: String
+  last_update_time: Int
+  last_sync_time: Int
+  solved: Boolean
+  time_elapsed: Int
+  board: [String]
+  num_lookups: Int
+  source: Int
+  puzzle_date: Int
+}
+
+type StatUser @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  nytEmail: String
+  nytPassword: String
+  isNytLinked: Boolean
+  lastSynced: Int
+}
