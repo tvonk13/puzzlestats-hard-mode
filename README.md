@@ -2,6 +2,8 @@
 
 This is a copy of my full puzzlestats app with the aws config files removed to allow it to be used by others. Please feel free to fork this project or submit updates for improvement!
 
+The purpose of this project is to create a web app that allows users to sync their New York Times Crossword data and view more informative statistics and graphs based on that data.
+
 # Setup Instructions
 * Checkout or fork this repository
 
